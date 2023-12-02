@@ -1,0 +1,824 @@
+:root{
+    --main-color: #343434;
+    --main-font: font-family: 'Poppins', sans-serif;
+    --head-font:font-family: 'Montserrat', sans-serif;
+    --main-padding:4.375rem;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+@media (min-width: 1400px) {
+  .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1140px;
+  }
+}
+
+.main-tittle h3{
+  color:var(--main-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+  position: relative;
+  display: inline-block;
+}
+
+.main-tittle h3::after{
+  content: "";
+  background-image: url('../images/dots.png');
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+/* =================== start of navbar =============================== */
+
+#nav .navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 800;
+}
+
+#nav .nav-item .nav-link {
+    color: white;
+    font-size: .875rem;
+    font-weight: 400;
+    position: relative;
+}
+
+#nav .nav-item .nav-link::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#nav .nav-item .nav-link.active::after{
+    width: 100%;
+}
+
+
+@media screen and (max-width:992px) {
+    #nav .nav-item .nav-link::after{
+    display: none;
+    }
+}
+
+/* =================== end of navbar =============================== */
+
+/* =================== start of home =============================== */
+
+#home{
+    background-image: url('../images/bg.jpg');
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#home .layer{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#home .layer .home-caption h5{
+    color: #fff;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+#home .layer .home-caption h1 span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 200;
+    color: #fff;
+
+
+}
+#home .layer .home-caption h1{
+  position: relative;
+  color: #fff;
+}
+
+#home .layer .home-caption h1::after{
+    content:"|";
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.75rem;
+    font-weight: 500;
+    animation-name: typing;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes typing{
+    0% {
+        content: "L|";
+      }
+    1% {
+        content: "La";
+      }
+      2% {
+        content: "Lar|";
+      }
+      3% {
+        content: "Larr";
+      }
+      4% {
+        content: "Larry|";
+      }
+      5% {
+        content: "Larry D";
+      }
+      6% {
+        content: "Larry Da";
+      }
+      7% {
+        content: "Larry Dan|";
+      }
+      8% {
+        content: "Larry Dani";
+      }
+      9% {
+        content: "Larry Danie|";
+      }
+      10% {
+        content: "Larry Daniel";
+      }
+      11% {
+        content: "Larry Daniels|";
+      }
+      25% {
+        content: "Larry Daniels";
+      }
+      26% {
+        content: "Larry Daniel";
+      }
+      27% {
+        content: "Larry Danie|";
+      }
+      28% {
+        content: "Larry Dani";
+      }
+      29% {
+        content: "Larry Dan|";
+      }
+      30% {
+        content: "Larry Da";
+      }
+      31% {
+        content: "Larry D|";
+      }
+      32% {
+        content: "Larry";
+      }
+      33% {
+        content: "Larr|";
+      }
+      34% {
+        content: "Lar";
+      }
+      35% {
+        content: "La|";
+      }
+      36% {
+        content: "L";
+      }
+      37% {
+        content: "|";
+      }
+      38% {
+        content: "D";
+      }
+      39% {
+        content: "De|";
+      }
+      40% {
+        content: "Dev";
+      }
+      41% {
+        content: "Deve|";
+      }
+      42% {
+        content: "Devel";
+      }
+      43% {
+        content: "Develo|";
+      }
+      44% {
+        content: "Develop";
+      }
+      45% {
+        content: "Develope|";
+      }
+      46% {
+        content: "Developer|";
+      }
+      60% {
+        content: "Developer|";
+      }
+      61% {
+        content: "Develope|";
+      }
+      62% {
+        content: "Develop";
+      }
+      63% {
+        content: "Develo|";
+      }
+      64% {
+        content: "Devel";
+      }
+      65% {
+        content: "Deve|";
+      }
+      66% {
+        content: "Dev";
+      }
+      67% {
+        content: "De|";
+      }
+      68% {
+        content: "D";
+      }
+      69% {
+        content: "|";
+      }
+      70% {
+        content: "D";
+      }
+      71% {
+        content: "De|";
+      }
+      72% {
+        content: "Des";
+      }
+      73% {
+        content: "Desi|";
+      }
+      74% {
+        content: "Desig";
+      }
+      75% {
+        content: "Design|";
+      }
+      76% {
+        content: "Designe";
+      }
+      77% {
+        content: "Designer|";
+      }
+      91% {
+        content: "Designer|";
+      }
+      92% {
+        content: "Designe|";
+      }
+      93% {
+        content: "Design";
+      }
+      94% {
+        content: "Desig|";
+      }
+      95% {
+        content: "Desi";
+      }
+      96% {
+        content: "Des|";
+      }
+      97% {
+        content: "De";
+      }
+      98% {
+        content: "D|";
+      }
+      100% {
+        content: "|";
+      }
+      
+    } 
+
+#home .layer .social-links .social-icon{
+    width: 1.875rem;
+    height: 1.875rem;
+    color: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#home .layer .social-links .social-icon i{
+    font-size: .875rem;
+}
+/* =================== end of home =============================== */
+
+/* =================== start of about =============================== */
+#about{
+  margin-top: var(--main-padding);
+}
+#about .about-img{
+  position: relative;
+}
+
+#about .about-img::after{
+  content: "";
+  background-image: url('../images/dots.png');
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: -9;
+}
+
+#about .about-content .about-tittle h2{
+  color:var(--main-color);
+  font-size: 1.875rem;
+  font-weight: 800;
+}
+
+#about .about-content .about-tittle .light{
+  color: #999999;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+#about .about-content .about-tittle p{
+  color:#748182;
+  font-size: .9375rem;
+  font-weight: 400;
+  padding-bottom: 15px;
+}
+#about .about-content .progress{
+  height: 25px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+#about .about-content .progress .progress-bar{
+background-color: #000; 
+
+}
+
+#about .about-content .progress .progress-bar .progress-content h6{
+  color:#FFFFFF;
+  font-size: .8125rem;
+  font-weight: 500;
+}
+#about .buttons{
+  border: 1px solid #1c1c1c;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+#about .buttons.button-download{
+  background: #1c1c1c;
+  color: #eee;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#about .buttons.button-download:hover{
+  background-color: #fff;
+  color:var(--main-color)
+}
+
+#about .buttons.button-contact{
+  background-color: #fff;
+  color:var(--main-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#about .buttons.button-contact:hover{
+  background: #1c1c1c;
+  color: #eee;
+}
+/* =================== end of about =============================== */
+
+/* =================== start of services =============================== */
+
+#services{
+  background-color: #F7F7F7;
+  margin-top: var(--main-padding);
+}
+
+#services .services-content .services-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F7F7F7;
+  transition: background-color 0.2s;
+}
+#services .services-content .services-icon i{
+  font-size: 1.875rem;
+  color: var(--main-color);
+  transition: color 0.2s;
+}
+#services .services-content h6{
+  color: var(--main-color);
+  font-size: 1.125rem;
+  font-weight: 800;
+}
+
+#services .services-content p{
+  color: #748182;
+  font-size: .875rem;
+  font-weight: 400;
+}
+#services .services-content:hover .services-icon{
+  background-color: #1c1c1c;
+}
+#services .services-content:hover .services-icon i{
+  color: #eee;
+}
+/* =================== end of services =============================== */
+
+/* =================== start of porfolio =============================== */
+#works{
+  margin-top: var(--main-padding);
+}
+
+
+#works .nav-pills .nav-link{
+  color: #222222 ;
+  font-size: 1rem;
+  font-weight: 700;
+  position: relative;
+  padding:0;
+  margin-right: 30px;
+}
+
+#works .nav-pills .nav-link::after{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #222222;
+  width: 0;
+  height: 2px;
+}
+
+#works .nav-pills .nav-link.active{
+  border: none;
+  background-color: transparent;
+}
+#works .nav-pills .nav-link.active::after{
+  width: 100%;
+
+}
+
+#works .works-content {
+  position: relative;
+  
+
+}
+#works .works-content .layer {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% -10px);
+  opacity: 0;
+  background-color: #fdfdfd;
+  transition: opacity 0.4s;
+}
+
+#works .works-content:hover .layer{
+  opacity: 1;
+}
+
+#works .works-content .layer .layer-content h6{
+  transition: transform 0.4s;
+
+}
+
+#works .works-content .layer:hover .layer-content h6{
+  transform: translateY(5px);
+
+}
+
+#works .works-content .layer .layer-content .layer-icons{
+  transition: transform 0.4s;
+
+}
+
+#works .works-content .layer:hover .layer-content .layer-icons{
+  transform: translateY(-5px);
+
+}
+
+#works .works-content .layer .layer-content h6{
+  color: var(--main-color);
+  font-size: .75rem;
+  font-weight: 700;
+}
+
+#works .works-content .layer .layer-content .layer-icons .icons  {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  background-color:#000;
+  border: 1px solid #000;
+  transition: color 0.3s;
+}
+
+#works .works-content .layer .layer-content .layer-icons .icons i{
+  font-size: .875rem;
+  color:#fff;
+  transition: color 0.3s;
+}
+
+#works .works-content .layer .layer-content .layer-icons .icons:hover{
+  background-color: #fff;
+}
+
+#works .works-content .layer .layer-content .layer-icons .icons:hover i{
+  color: #000;
+} 
+/* =================== end of porfolio =============================== */
+
+/* =================== start of testimonials =============================== */
+
+#clients {
+  margin-top: var(--main-padding);
+  background-color: #F7F7F7;
+}
+
+
+#clients .carousel-inner .carousel-item img {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+
+}
+#clients .slide{
+  width: 90%;
+  margin: auto;
+}
+
+#clients .carousel-inner .carousel-item p{
+  color: #748182;
+  font-weight: 400;
+  font-size: .9375rem;
+  padding-bottom: 10px;
+}
+
+#clients .carousel-inner .carousel-item h6{
+  color: var(--main-color);
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+#clients .carousel-inner .carousel-item span{
+  color: #888888;
+  font-size: .75rem;
+  font-weight: 600;
+}
+#clients .carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d6d6d6;
+  margin-top: 30px;
+  margin-right: 7px;
+}
+
+#clients .carousel-indicators [data-bs-target]:hover{
+  background-color: #869791;
+
+}
+
+#clients .carousel-indicators .active{
+  background-color: #869791;
+
+}
+
+@media (max-width: 991.98px) { 
+  #clients .slide{
+    width: 100%;
+    margin: auto;
+  }
+}
+/* =================== end of testimonials =============================== */
+
+/* =================== start of counter =============================== */
+.counter{
+  margin-block: var(--main-padding);
+}
+.counter .counter-content .counter-icon i{
+  color: var(--main-color);
+}
+
+.counter .counter-content h3{
+  color: var(--main-color);
+  font-size: 1.875rem;
+  font-weight: 900;
+}
+
+.counter .counter-content p{
+  color: #748182;
+  font-size: .9375rem;
+  font-weight: 600;
+}
+/* =================== end of counter =============================== */
+
+/* =================== start of team =============================== */
+#team{
+  margin-top: var(--main-padding);
+  background-color: #F7F7F7;
+}
+#team .team-content .team-img{
+  position: relative;
+  overflow: hidden;
+}
+
+#team .team-content .team-img img{
+  transition: transform 0.4s;
+}
+
+#team .team-content .team-img .layer-links{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 5px;
+  bottom: 5px;
+  width: calc(100% - 10px);
+  height: calc(100% -10px);
+  opacity: 0;
+  background-color: #fdfdfd;
+  transform: rotateY(180deg) scale(0.5,0.5);
+  transition: opacity 0.4s, transform 0.4s;
+}
+
+#team .team-content .team-img:hover img{
+  transform: scale(1.2);
+}
+
+
+#team .team-content:hover .layer-links{
+  opacity: 1;
+  transform: rotateY(0deg) scale(1,1);
+}
+
+#team .team-content .team-img .layer-links .layer-icon{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  background-color: #000;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+
+}
+
+#team .team-content .team-img .layer-links .layer-icon i{
+  color: #fff;
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+#team .team-content .team-img .layer-links .layer-icon:hover{
+  background-color: #fff;
+}
+
+#team .team-content .team-img .layer-links .layer-icon:hover i{
+  color: #000;
+}
+
+#team .team-content .team-text{
+  background-color: #5B5B5B;
+}
+
+#team .team-content .team-text h4{
+  font-size: 1.5625rem;
+  font-weight: 500;
+}
+#team .team-content .team-text h5{
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+/* =================== end of team =============================== */
+
+/* =================== start of contact =============================== */
+#contact{
+  padding-top: var(--main-padding);
+}
+#contact .contact-content .contact-icon{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #F7F7F7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  margin-block: 15px;
+  transition: backgroun-color 0.5s;
+}
+
+#contact .contact-content .contact-icon i{
+  font-size: 1.5625rem;
+  color: var(--main-color);
+  transition: color 0.5s;
+}
+#contact .contact-content h6{
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--main-color);
+  padding-bottom: 5px;
+}
+#contact .contact-content p{
+  font-size: .9375rem;
+  font-weight: 400;
+  color: #748182;
+}
+
+#contact .contact-content:hover .contact-icon{
+  background-color: #1c1c1c;
+}
+
+#contact .contact-content:hover .contact-icon i{
+  color: #eee;
+}
+
+#contact .contact-form input{
+  outline: none;
+  border: none;
+  background-color: #F4F4F4;
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 10px;
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+#contact .contact-form textarea{
+  outline: none;
+  border: none;
+  background-color: #F4F4F4;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-top: 10px;
+  font-size: .875rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+#contact .contact-form button{
+  background-color: #1c1c1c;
+  color: #eee;
+  padding: 8px 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: .8125rem;
+  font-weight: 400;
+  border: 1px solid #1c1c1c;
+  transition: backgroun-color 0.4s, color 0.4s;
+}
+
+#contact .contact-form button:hover{
+  background-color: #fff;
+  color: var(--main-color);
+}
+/* =================== end of contact =============================== */
+
+/* =================== start of footer =============================== */
+footer{
+  background-color: #1c1c1c;
+}
+
+footer .footer-content{
+  color: #748182;
+  font-size: 13px;
+  font-weight: 400;
+  padding-block: 1.875rem;
+}
+/* =================== end of footer =============================== */
